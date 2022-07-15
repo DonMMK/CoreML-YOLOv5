@@ -93,7 +93,7 @@ extension ViewController {
                 let newImage = safeSelf.drawRectOnImage(detections, CIImage(image:image)!)
                 let ind = Date()
                 let idiff = ind.timeIntervalSince(start)
-                print("draw:\(idiff)")
+                print("Name of function: \(#function) draw:\(idiff)")
 
                 safeSelf.imageView.image = UIImage(ciImage: newImage!)
             }
